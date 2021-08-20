@@ -1,0 +1,101 @@
+$dark-purple: #0a0c1b;
+$purple: #1c1938;
+$light-purple: #af5cd9;
+$lavender: #a19fb5;
+
+* {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    color:#fefeff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $dark-purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: inline-block;
+    max-width: 1000px;
+    background-color: $purple;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    
+    &__content {
+        padding: 4.2rem 4.5rem;
+        width: 100%;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__header {
+        font-size: 2.1rem;
+        font-weight: 700;
+        line-height: 1.3;
+        
+        span { color: $light-purple; }
+    }
+
+    &__info {
+        flex: 2;
+        margin-top: 1.8rem;
+        padding-right: 2rem;
+        color: $lavender;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.8;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 4rem;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: $lavender;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+    }
+    &__image {
+        background: linear-gradient($light-purple);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        // height: 100%;
+        overflow: hidden;
+        
+        // .img {
+        //     background: url(./images/image-header-desktop.jpg) no-repeat cover;
+        // }
+        
+        img {
+            object-fit: cover;
+            opacity: .75;
+            mix-blend-mode: multiply;
+        }
+        
+        
+        
+    }
+}
