@@ -1,5 +1,5 @@
 * {
-  font-family: 'Poppins', Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
   color: #fefeff;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #0a0c1b;
+  background-color: #090b1a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +19,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  font-size: 15px;
 }
 
 @media (max-width: 1000px) {
@@ -38,7 +39,7 @@ section {
   display: inline-block;
   max-width: 1000px;
   width: 96vw;
-  background-color: #1c1938;
+  background-color: #1b1938;
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
@@ -118,7 +119,7 @@ section {
 }
 
 .card__header span {
-  color: #af5cd9;
+  color: #aa5cdb;
 }
 
 .card__info {
@@ -126,7 +127,7 @@ section {
       -ms-flex: 2;
           flex: 2;
   margin-top: 1.8rem;
-  color: #a19fb5;
+  color: rgba(255, 255, 255, 0.75);
   font-size: 14px;
   font-weight: 300;
   line-height: 1.8;
@@ -140,6 +141,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media (max-width: 1000px) {
@@ -169,7 +171,7 @@ section {
 .card .stats h4 {
   font-size: 11px;
   text-transform: uppercase;
-  color: #a19fb5;
+  color: rgba(255, 255, 255, 0.75);
   letter-spacing: 2px;
   font-weight: 500;
 }
@@ -181,8 +183,8 @@ section {
 }
 
 .card__image {
-  background: -webkit-gradient(linear, left top, left bottom, from(#af5cd9));
-  background: linear-gradient(#af5cd9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#aa5cdb));
+  background: linear-gradient(#aa5cdb);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
